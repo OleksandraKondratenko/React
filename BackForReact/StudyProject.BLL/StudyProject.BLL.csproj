@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudyProject.DAL\StudyProject.DAL.csproj" />
+    <ProjectReference Include="..\StudyProject.Doman\StudyProject.Doman.csproj" />
+  </ItemGroup>
+
+</Project>
