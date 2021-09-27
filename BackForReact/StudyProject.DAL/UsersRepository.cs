@@ -31,7 +31,10 @@ namespace StudyProject.DAL
 
         public async Task UpdateUser(Users user)
         {
-            await _userRepository.UpdateUser(user);
+            var UserId = user.ID;
+            var IsActive = user.IsActive;
+            //await _userRepository.UpdateUser(user);
+            await _dBConnection.QueryAsync("UpdateUser", new { UserId, IsActive });
         }
     }
 }

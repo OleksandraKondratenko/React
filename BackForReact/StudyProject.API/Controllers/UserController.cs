@@ -28,7 +28,7 @@ namespace StudyProject.API.Controllers
 
 
         [HttpPut]
-        public async Task UpdateUserAsync(List<Users> users)
+        public async Task UpdateUserAsync([FromBody]List<Users> users)
         {
             await _usersService.UpdateUser(users);
         }
